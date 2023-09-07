@@ -1,35 +1,35 @@
+/*----- Style of all the Document -----*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-:root
-{
-	scroll-behavior: smooth;
+:root {
+    scroll-behavior: smooth;
 }
 
-/*-- Content of Header --*/
+/*----- Content of Header -----*/
 .container-navbar {
     width: 95%; /* space for the bar of navegation */
 }
 
 .navbar-color {
-    background: #667EEA;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #667EEA 0%,  #D8B5FF 100%);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right,#667EEA 0%,#D8B5FF 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #667EEA; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #667EEA 0%, #D8B5FF 100%); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #667EEA 0%, #D8B5FF 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .a-active {
-    color:black;
-    transition: all .3s ease;
+    color: black;
     font-family: 'Shadows Into Light';
+    -webkit-transition: all .3s ease;
 }
 
 .a-nav {
     color: #ffffff;
-    transition: all .3s ease;
     font-family: 'Shadows Into Light';
+    -webkit-transition: all .3s ease;
 }
 
 .a-nav:hover {
@@ -41,64 +41,63 @@
 }
 
 .btn-login {
-    background: rgba(121,63,223, 0.7);
+    background: rgba(121, 63, 223, 0.7);
     color: #000000;
     border: none;
     padding: auto;
     font-weight: normal;
     font-family: 'Shadows Into Light';
     letter-spacing: 1px;
-    transition: all .5s ease-in-out;
     border-radius: 20px;
     background-repeat: no-repeat;
-    /*border: 0.5px solid #000000;*/
+    -webkit-transition: all .5s ease-in-out;
 }
 
 .btn-login:hover {
-    background: rgba(160,132,232, 0.9);
-    color:#000000;
-    transition: all .5s ease;
-	background-repeat: no-repeat;
-	background-position: 65%;
-	background-size: 20px;
+    background: rgba(160, 132, 232, 0.9);
+    color: #000000;
+    background-repeat: no-repeat;
+    background-position: 65%;
+    background-size: 20px;
+    -webkit-transition: all .5s ease;
 }
 
 .btn-register {
-    background: rgba(160,132,232, 0.9);
-    color:#000000;
+    background: rgba(160, 132, 232, 0.9);
+    color: #000000;
     width: 135px;
     border: none;
     padding: auto;
     font-weight: normal;
     font-family: 'Shadows Into Light';
     letter-spacing: 1px;
-    transition: all .5s ease-in-out;
     border-radius: 20px;
     background-repeat: no-repeat;
+    -webkit-transition: all .5s ease-in-out;
 }
 
 .btn-register:hover {
-    background: rgba(121,63,223, 0.7);
-    color:#000000;
-    transform: all.5s ease;
+    background: rgba(121, 63, 223, 0.7);
+    color: #000000;
     background-repeat: no-repeat;
     background-position: 65%;
     background-size: 30px;
+    -webkit-transform: all.5s ease;
 }
 
 .input-search {
+    background: rgba(216, 181, 255, 0.7);
     font-family: 'Shadows Into Light';
     border-radius: 20px;
-    background: rgba(216,181,255, 0.7);
 }
 
 .input-search:focus {
-    background: rgba(216,181,255, 0.7);
+    background: rgba(216, 181, 255, 0.7);
 }
 
 /*-- Content of Main --*/
-.background  {
-    background-color: rgba(216,181,255, 0.7);
+.background {
+    background-color: rgba(216, 181, 255, 0.7);
 }
 
 .section-title {
@@ -117,47 +116,116 @@
 
 .container-flex {
     display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container-box {
+    width: 23%;
+    height: 20%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.container-box img {
+    width: 100%;
+    height: 200px;
+    display: block;
 }
 
 .container-galery {
-	width: 23%;
-	display: block;
+    background: linear-gradient(to top, rgba(161, 140, 209, 0.5) 0%, rgba(251, 194, 235, 0.6) 100%);
+    width: 23%;
     object-fit: cover;
-	/* margin-bottom: 40px; */
-    border-radius: 30px;
-	outline: none;
-    margin: 15px 1em 0 0;
-	position: relative;
-	transition: all .3s ease;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-	background: linear-gradient(to top, rgba(161, 140, 209, 0.5) 0%, rgba(251, 194, 235, 0.6) 100%);
+    /* margin-bottom: 40px; */
+    border-radius: 20px;
+    margin: 10px 1em 0 0;
+    position: relative;
+}
+
+.container-flex .container-box  {
+    transition: all 600ms cubic-bezier(1,0,0,1);
+}
+
+.container-flex .container-box:hover {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 1),
+    5px 5px 0px 0px #D8B5FF,
+    0.3em 0.3em 1em rgba(0, 0, 0, 1);
+    transform: translate(-5px, -5px);
+}
+
+.container-box:hover .text-image {
+    /* display: none; */
+    background: rgba(200, 20, 255, 0.8);
+    -webkit-transition: all 1s ease;
+}
+
+.container-text {
+    background: rgba(130, 133, 255, 0.8);
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #2EFEF7;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.text-image {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 15%;
+    padding: .3em;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis; /* shorten the letters */
+    white-space: nowrap;
+    margin-bottom: 0px;
 }
 
 @media screen and (max-width: 1200px) {
+    .container-box img {
+        width: 100%;
+        height: 170px;
+        display: block;
+    }
+
     .container-galery {
         width: 30%;
-        border-radius: 10px;
-        margin: 20px 1em 0 0;
+        border-radius: 15px;
     }
+
+    .container-text {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
+    .container-box img {
+        width: 100%;
+        height: 150px;
+        display: block;
+    }
+
     .container-galery {
         width: 45%;
         border-radius: 10px;
         margin: 15px 1em 0 0;
-    }
-
-    .container-space {
-        width: 100%;
     }
 }
 
 @media screen and (max-width: 500px) {
     .section-title {
         font-size: 20px;
+    }
+
+    .container-text {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 }
 
@@ -167,9 +235,9 @@
         border-radius: 10px;
         margin: 15px 1em 0 0;
     }
-    
-    .container-space {
-        width: 100%;
-    }
 
+    .container-text {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
 }
