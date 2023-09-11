@@ -10,6 +10,13 @@
 }
 
 /*----- Content of Header -----*/
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
 .container-navbar {
     width: 95%; /* space for the bar of navegation */
 }
@@ -98,13 +105,14 @@
 /*----- Content of Main -----*/
 .background {
     background-color: rgba(216, 181, 255, 0.7);
+    margin-top: 65px;
 }
 
 .section-title {
     font-family: 'Shadows Into Light';
     text-align: center;
     margin: auto;
-    padding: 10px 0;
+    padding: 5px 0;
     font-size: 30px;
 }
 
@@ -118,6 +126,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-bottom: 35px;
 }
 
 .container-box {
@@ -328,4 +337,26 @@
     .container-box-poster .container-poster {
         height: 200px;
     }
+}
+
+/*----- Container Footer -----*/
+footer {
+    background: #667EEA; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #667EEA 0%, #D8B5FF 100%); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #667EEA 0%, #D8B5FF 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.footer-content p{
+    color: #FFFFFF;
+    font-size: 25px;
+    font-family: 'Shadows Into Light';
 }
