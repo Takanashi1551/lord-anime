@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!--Custom Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Iniciar Sesión - Lord Anime</title>
 </head>
-<body>
-    <h1>Prueba de ramas</h1>
+
+<body class="body-login-content">
+    <div class="login-content">
+        <form action="">
+            <h1>Iniciar Sesión</h1>
+            <div class="input-content">
+                <input type="text" placeholder="Usuario" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="input-content">
+                <input type="password" placeholder="Contraseña" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="remember-forgot-content">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">¿Olvidaste la contraseña?</a>
+            </div>
+            <button type="submit" class="btn-login-signup">Iniciar Sesión</button>
+            <div class="register-content">
+                <p>¿No tienes una cuenta? <a href="">Registrarse</a></p>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>

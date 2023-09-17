@@ -95,9 +95,10 @@
 }
 
 .input-search {
-    background: rgba(216, 181, 255, 0.7);
+    background: rgba(216, 181, 255, 0.5);
     font-family: 'Shadows Into Light';
     border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .input-search:focus {
@@ -431,4 +432,121 @@ footer {
     .footer-content p{
         font-size: 15px;
     }
+}
+
+/*----- Content of Login and Signup -----*/
+
+/*----- Content Login -----*/
+.body-login-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(251, 194, 235, 0.4) 0%, hsla(218, 68%, 79%, 0.5) 100%), url(../img/aincrad.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-content {
+    width: 420px;
+    background: transparent;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 30px 40px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-content h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.img-login {
+    width: 30px;
+}
+
+.login-content .input-content {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.input-content input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(216, 181, 255, 0.5);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-content input::placeholder {
+    color: #FFFFFF;
+}
+
+.input-content i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.login-content .remember-forgot-content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot-content label input {
+    accent-color: #FFFFFF;
+    margin-right: 3px;
+}
+
+.remember-forgot-content a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.remember-forgot-content a:hover {
+    text-decoration: underline;
+}
+
+.login-content .btn-login-signup {
+    width: 100%;
+    height: 45px;
+    background: #FFFFFF;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+.login-content .register-content {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-content p a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-content p a:hover {
+    text-decoration: underline;
 }
