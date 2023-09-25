@@ -428,15 +428,14 @@ footer {
     }
 }
 
-/*----- Content of Login and Signup -----*/
-
+/*----- Content of Login, Signup and Recover -----*/
 /*----- Content Login -----*/
 .body-login-content {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to top, rgba(251, 194, 235, 0.4) 0%, hsla(218, 68%, 79%, 0.5) 100%), url(../img/aincrad.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, hsla(0, 0%, 0%, 0.3) 100%), url(../img/aincrad.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -460,14 +459,10 @@ footer {
     text-align: center;
 }
 
-.img-login {
-    width: 30px;
-}
-
 .login-content .input-content {
     width: 100%;
     height: 50px;
-    margin: 30px 0;
+    margin: 20px 0;
     position: relative;
 }
 
@@ -500,7 +495,7 @@ footer {
     display: flex;
     justify-content: space-between;
     font-size: 15px;
-    margin: -15px 0 15px;
+    margin: -10px 0 15px;
 }
 
 .remember-forgot-content label input {
@@ -551,4 +546,112 @@ footer {
 
 .register-content p a:hover {
     text-decoration: underline;
+}
+
+/*----- Signup -----*/
+.body-signup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, hsla(0, 0%, 0%, 0.3) 100%), url(../img/register.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*----- Recover -----*/
+.body-recover-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, hsla(0, 0%, 0%, 0.3) 100%), url(../img/recover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width:500px) {
+    .login-content {
+        width: 380px;
+        border-radius: 15px;
+        padding: 25px 35px;
+    }
+
+    .login-content h1 {
+        font-size: 20px;
+    }
+
+    .login-content .input-content {
+        height: 50px;
+        margin: 25px 0;
+    }
+
+    .input-content input {
+        width: 100%;
+        height: 100%;
+        font-size: 15px;
+    }
+
+    .input-content i {
+        right: 15px;
+        transform: translateY(-50%);
+        font-size: 18px;
+    }
+
+    .login-content .remember-forgot-content {
+        font-size: 14px;
+    }
+
+    .login-content .btn-login-signup {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .login-content .register-content {
+        font-size: 14px;
+        margin: 15px 0 15px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .login-content {
+        width: 300px;
+        padding: 15px 20px;
+    }
+
+    .login-content h1 {
+        font-size: 21px;
+    }
+
+    .login-content .input-content {
+        height: 34px;
+        margin: 25px 0;
+    }
+
+    .input-content i {
+        right: 16px;
+        top: 60%;
+        transform: translateY(-40%);
+        font-size: 16px;
+    }
+
+    .login-content .remember-forgot-content {
+        font-size: 14px;
+        margin: -5px 0 15px;
+    }
+    .remember-forgot-content label input {
+        margin-right: 0px;
+    }
+
+    .login-content .btn-login-signup {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .login-content .register-content {
+        font-size: 14px;
+        margin: 8px 0 8px;
+    }
 }
