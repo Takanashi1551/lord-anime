@@ -39,7 +39,7 @@
 }
 
 .a-nav:hover {
-    color: #626C92;
+    color: #000000;
 }
 
 .navbar-margin {
@@ -94,6 +94,13 @@
     background: rgba(216, 181, 255, 0.5);
     border-radius: 20px;
     border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-search {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0px;
+    border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
 }
 
 .input-search:focus {
@@ -224,6 +231,71 @@
     -webkit-transition: all 300ms ease-out;
 }
 
+/*--- Box text episode and year ---*/
+.text-image-episode {
+    bottom: 82%;
+	height: 14%;
+	padding: .3em;
+    display: block;
+	position: absolute;
+    white-space: nowrap;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 300ms ease-out;
+}
+
+.content-box:hover .text-image-episode {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 300ms ease-out;
+}
+
+.box-episode {
+	background: rgba(236,56,188, 0.9);
+	width: 23%;
+    right: 0%;
+    font-weight: 800;
+    color: #000000;
+    font-family: 'Shadows Into Light';
+	letter-spacing: 1px;
+	font-size: 15px;
+	border-top-right-radius: 11px;
+	border-bottom-left-radius: 12px;
+	text-align: center;
+}
+
+.text-image-issue {
+    bottom: 88%;
+	height: 10%;
+	padding: .4em;
+    display: block;
+	position: absolute;
+    white-space: nowrap;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 300ms ease-out;
+}
+
+.content-box-poster:hover .text-image-issue {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 300ms ease-out;
+}
+
+.box-year {
+	background: rgba(236,56,188, 0.9);
+	width: 25%;
+    right: 0%;
+    font-weight: 800;
+    color: #000000;
+    font-family: 'Shadows Into Light';
+	letter-spacing: 1px;
+	font-size: 15px;
+	border-top-right-radius: 11px;
+	border-bottom-left-radius: 12px;
+	text-align: center;
+}
+
 .content-play-image {
     width: 100%;
     height: 100%;
@@ -331,6 +403,26 @@
     .content-box-poster .content-poster {
         height: 250px;
     }
+
+    .text-image-episode {
+        bottom: 78%;
+        height: 19%;
+        padding: .4em;
+    }
+
+    .box-episode {
+        width: 20%;
+    }
+
+    .text-image-issue {
+        bottom: 86%;
+        height: 13%;
+        padding: .6em;
+    }
+
+    .box-year{
+        width: 25%;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -360,6 +452,27 @@
     .content-text {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+    }
+
+    .text-image-episode {
+        bottom: 79%;
+        height: 17%;
+        padding: .5em;
+    }
+
+    .box-episode {
+        width: 30%;
+        font-size: 14px;
+    }
+
+    .text-image-issue {
+        bottom: 83%;
+        height: 15%;
+        padding: .5em;
+    }
+
+    .box-year{
+        width: 35%;
     }
 }
 
@@ -391,6 +504,10 @@
 
     .content-play{
         height: 50px;
+    }
+
+    .box-episode {
+        width: 35%;
     }
 }
 
