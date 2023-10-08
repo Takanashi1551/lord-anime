@@ -97,10 +97,16 @@
 }
 
 .btn-search {
+    background-color: rgba(161, 140, 209, 1);
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 0px;
     border-top-right-radius: 40px;
 	border-bottom-right-radius: 40px;
+}
+
+.btn-search:hover {
+    background-color: #A18CD1;
+    border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .input-search:focus {
